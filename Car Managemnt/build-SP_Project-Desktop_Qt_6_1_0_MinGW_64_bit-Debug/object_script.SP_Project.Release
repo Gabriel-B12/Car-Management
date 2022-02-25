@@ -1,0 +1,10 @@
+release/add.o
+release/cautare.o
+release/main.o
+release/mainwindow.o
+release/masina.o
+release/stergere.o
+release/moc_add.o
+release/moc_cautare.o
+release/moc_mainwindow.o
+release/moc_stergere.o

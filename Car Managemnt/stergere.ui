@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stergere</class>
+ <widget class="QDialog" name="stergere">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#stergere{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.944, y2:0.943, stop:0 rgba(107, 117, 255, 255), stop:1 rgba(87, 255, 255, 255));}
+QWidget&gt;QPushButton{
+    background-color:  rgb(43, 43, 43);
+	width: 150px;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 14px;
+	color: rgb(85, 255, 255);
+}
+QWidget&gt;QPushButton:pressed{
+    background-color: black;
+   
+}
+QWidget&gt;QPushButton:hover{
+    
+	border-color: rgb(0, 0, 127);
+   
+}
+QWidget&gt;QLabel{
+    
+    font: bold 14px;
+
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Introduceti numarul de inmatriculare: </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>381</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <column>
+    <property name="text">
+     <string>Marca</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>An</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Numar inmatriculare</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>90</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Sterge</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>180</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>stergere</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

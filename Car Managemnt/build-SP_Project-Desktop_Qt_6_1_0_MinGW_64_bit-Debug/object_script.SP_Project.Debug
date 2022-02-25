@@ -1,0 +1,10 @@
+debug/add.o
+debug/cautare.o
+debug/main.o
+debug/mainwindow.o
+debug/masina.o
+debug/stergere.o
+debug/moc_add.o
+debug/moc_cautare.o
+debug/moc_mainwindow.o
+debug/moc_stergere.o

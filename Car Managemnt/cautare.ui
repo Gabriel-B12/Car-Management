@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cautare</class>
+ <widget class="QDialog" name="cautare">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#cautare{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.944, y2:0.943, stop:0 rgba(107, 117, 255, 255), stop:1 rgba(87, 255, 255, 255));}
+QWidget&gt;QPushButton{
+    background-color:  rgb(43, 43, 43);
+	width: 150px;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 14px;
+	color: rgb(85, 255, 255);
+}
+QWidget&gt;QPushButton:pressed{
+    background-color: black;
+   
+}
+QWidget&gt;QPushButton:hover{
+    
+	border-color: rgb(0, 0, 127);
+   
+}
+QWidget&gt;QLabel{
+    
+    font: bold 12px;
+
+}
+QWidget&gt;QLineEdit{
+    
+    border-radius:5px;
+
+}
+QWidget&gt;QLineEdit:!Enabled{
+    
+	
+	background-color: rgb(221, 221, 221);
+    border-style: outset;
+    border-width: 2px;
+	border-color: rgb(116, 116, 116);
+
+}
+QWidget&gt;QLineEdit:Enabled{
+    
+border-style: outset;
+    border-width: 1px;
+	
+	border-color: rgb(80, 80, 80);
+
+}
+</string>
+  </property>
+  <widget class="QCheckBox" name="marca">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Marca</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="model">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Model</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="culoare">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Culoare</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="anul">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>An</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="nr_loc">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>50</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Numar locuri</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="capacitate">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>80</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capacitate motor</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="putere">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>110</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Putere motor</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="combustibil">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>140</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Combustibil</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_marca">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>50</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_model">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_culoare">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_an">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>140</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_locuri">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_capacitate">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>80</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_putere">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>110</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="l_combustibil">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>140</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 14px;
+</string>
+   </property>
+   <property name="text">
+    <string>Alegeti criteriul de cautare:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>390</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cauta</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>390</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="nr_inm">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nr inmatriculare</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>20</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>471</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Marca</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Culoare</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>An</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nr loc</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Capacitate</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nr inm</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Putere</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Combustibil</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nr KM</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Data expirare RCA</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Data expirare ITP</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>255</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 14px;
+color: rgb(85, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
